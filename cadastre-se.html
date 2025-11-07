@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>  
+    <link rel="stylesheet" href="css/cadastre-se.css">                                 
+    <link rel="shortcut icon" href="img/favicon_io (2)/favicon.ico" type="image/x-i">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Pinguim"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="animais.em.destaque.html">Animais em destaque</a></li>
+                <li><a href="sobre.nos.html">Sobre nós</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="fale.conosco.html">Fale conosco</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <input type="text" placeholder="Buscar">
+            <a href="doar.html"><button class="doar">Doar</button></a>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="login-box">
+            <h2>BEM-VINDO DE VOLTA!</h2>
+
+            <button class="google-btn">Fazer login com o Google</button>
+            <button class="facebook">Fazer login com o Facebook</button>
+            <button class="x-btn">Fazer login com o X</button>
+
+            <div class="divider">
+                <span>OU</span>
+            </div>
+
+            <input type="text" placeholder="Email ou nome de usuário">
+            <input type="password" placeholder="Senha">
+            <button class="btn">Entrar</button>
+        </section>
+
+        <section class="signup-box">
+            <h2>Cadastre-se aqui!</h2>
+            <input type="text" placeholder="Nome completo">
+            <input type="text" placeholder="Celular ou email">
+            <input type="password" placeholder="Senha">
+
+            <label>Data de Nascimento:</label>
+            <div class="birth">
+                <select><option>Dia</option></select>
+                <select><option>Mês</option></select>
+                <select><option>Ano</option></select>
+            </div>
+
+            <label>Gênero:</label>
+            <div class="gender">
+                <label><input type="radio" name="gender"> F</label>
+                <label><input type="radio" name="gender"> M</label>
+                <label><input type="radio" name="gender"> Outro</label>
+            </div>
+
+            <p class="terms">
+                Ao clicar em Cadastrar-se você concorda com nossos <a href="#">Termos</a>,
+                <a href="#">Política de Privacidade</a> e <a href="#">Política de Cookies</a>.
+            </p>
+
+            <button class="btn">Cadastrar</button>
+        </section>
+    </main>
+</body>                         
+</html>
