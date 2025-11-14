@@ -232,10 +232,10 @@ button:hover {
 
 .steps {
     display: flex;            
-    justify-content: center;  
-    align-items: center;      
-    gap: 10px;  
+    justify-content: center;   
+    gap: 60px;  
     margin-top: 20px;
+    text-align: center;
 
 }
 
