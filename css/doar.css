@@ -32,7 +32,6 @@ header {
     justify-content: space-between;
     background-color: var(--nav);
     padding: 10px 40px;
-    flex-wrap: wrap;
 }
 
 .logo img {
@@ -72,6 +71,7 @@ nav a:hover {
     border: none;
     outline: none;
 }
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -79,10 +79,10 @@ nav a:hover {
 }
 
 .search-bar input {
-  padding: 8px 12px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
 }
 
 
@@ -206,12 +206,22 @@ input:focus {
     margin-top: 10px;
     font-family: var(--ff);
     box-shadow: 0 5px 15px var(--black);
+    width: 250px;
 }
 
 .donate:hover {
   background: var(--gradienteCinza);
   color: var(--black);
   box-shadow: 0 5px 15px var(--black);
+}
+
+.donate a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.donate a:hover {
+  color: var(--black);
 }
 
 .steps {

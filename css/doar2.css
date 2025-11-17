@@ -34,7 +34,6 @@ header {
     justify-content: space-between;
     background-color: var(--nav);
     padding: 10px 40px;
-    flex-wrap: wrap;
 }
 
 .logo img {
@@ -213,7 +212,6 @@ form {
 
 .concluido{
     background: var(--gradienteAzul);
-    color: var(--white);
     border: none;
     padding: 12px;
     border-radius: 25px;
@@ -222,12 +220,23 @@ form {
     margin-top: 10px;
     font-family: var(--ff);
     box-shadow: 0 5px 15px var(--caixa);
+    width: 250px;
+}
+
+.concluido a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.concluido a:hover {
+    color: var(--black);
 }
 
 button:hover {
     background: var(--gradienteCinza);
     color: var(--black);
     box-shadow: 0 5px 15px var(--black);
+    color: var(--nav);
 }
 
 .steps {
