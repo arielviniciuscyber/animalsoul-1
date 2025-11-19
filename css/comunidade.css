@@ -138,6 +138,7 @@ body {
     color: var(--white);
     box-shadow: 0 2px 25px var(--white);
 }
+
 .banner {
   height: 80vh;
   background-image: url(../img/Comunidade/bannerComunidade.jpg);

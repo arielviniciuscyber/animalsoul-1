@@ -87,6 +87,11 @@ nav a:hover {
     transition: 0.3s;
 }
 
+.doar:hover {
+    background: var(--gradienteSaibamais);
+    color: var(--white);
+    box-shadow: 0 2px 15px var(--white);
+}
 
 /* ===== CAIXA DE SELEÇÃO ===== */
 .language-selector {
@@ -134,11 +139,6 @@ nav a:hover {
 }
 
 
-.doar:hover {
-    background: var(--gradienteSaibamais);
-    color: var(--white);
-    box-shadow: 0 2px 15px var(--white);
-}
 .hero {
     position: relative;
     width: 100%;
@@ -193,6 +193,7 @@ blockquote {
   font-style: italic;
   color: red;
   margin: 25px 0;
+  text-align: center;
 }
 
 .rodape {
