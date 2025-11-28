@@ -13,8 +13,17 @@
             <a href="index-en.html"><img src="img/logo.png" alt="Logo Pinguim"></a>
         </div>
         <nav>
-            <ul>
-                <li><a href="index-en.html">Home</a></li>
+            <ul class="navbar">
+                <li><a href="index-en.html" class="ativo">Home</a></li>
+                <li><a href="animais.em.destaque-en.html">Featured animals</a></li>
+                <li><a href="sobre.nos-en.html">About us</a></li>
+                <li><a href="comunidade-en.html">Community</a></li>
+                <li><a href="fale.conosco-en.html">Talk to us</a></li>
+            </ul>
+
+            <!-- MENU MOBILE -->
+            <ul class="navbar" id="mobileMenu">
+                <li><a href="index-en.html" class="ativo">Home</a></li>
                 <li><a href="animais.em.destaque-en.html">Featured animals</a></li>
                 <li><a href="sobre.nos-en.html">About us</a></li>
                 <li><a href="comunidade-en.html">Community</a></li>
@@ -33,6 +42,10 @@
               <option value="index-fr.html">FR</option>
             </select>
           </div>
+          <!--Botão mobile-->
+        <button class="navbar_toggle" aria-label="menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
             <a href="doar-en.html"><button class="doar">Donate</button></a>
         </div>
     </header>
@@ -95,7 +108,7 @@
             <div class="conteudo">
                 <h2>Endangered specie: Maned wolf rescued with mange and signs of malnutrition in the interior of São Paulo</h2>
                 <p class="data">25/04/2024 21h03 | Updated 1 year ago</p>
-                <a href="#" class="botttao">Find out more</a>
+                <a href="https://g1.globo.com/sp/sao-jose-do-rio-preto-aracatuba/noticia/2024/04/25/ameacado-de-extincao-lobo-guara-e-resgatado-com-sarna-e-sinais-de-desnutricao-no-interior-de-sp.ghtml" class="botttao">Find out more</a>
             </div>
         </article>
 
@@ -104,7 +117,7 @@
             <div class="conteudo">
                 <h2>Pink river dolphin added to the "endangered" list in Rondônia; understand why</h2>
                 <p class="data">14/11/2023 - 12h01 | Updated 1 year ago</p>
-                <a href="#" class="botttao">Find out more</a>
+                <a href="https://g1.globo.com/ro/rondonia/noticia/2023/11/14/boto-cor-de-rosa-entra-na-lista-de-perigo-de-extincao-em-rondonia-entenda.ghtml" class="botttao">Find out more</a>
             </div>
         </article>
 
@@ -113,7 +126,7 @@
             <div class="conteudo">
                 <h2>Giant pandas: Chinese species no longer considered "extinct" after breeding program.</h2>
                 <p class="data">09/11/2023 - 08h14 | Updated 1 year ago</p>
-                <a href="#" class="botttao">Find out more</a>
+                <a href="https://oglobo.globo.com/mundo/epoca/noticia/2023/11/09/pandas-gigantes-especie-chinesa-deixa-de-ser-considerada-extinta-apos-programa-de-reproducao.ghtml" class="botttao">Find out more</a>
             </div>
         </article>
 
@@ -123,7 +136,7 @@
             <div class="conteudo">
                 <h2>Golden lion tamarins rescued from international trafficking return to nature</h2>
                 <p class="data">05/09/2023 - 10h11 | Updated 1 year ago</p>
-                <a href="#" class="botttao">Find out more</a>
+                <a href="https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/micos-leoes-dourados-resgatados-do-trafico-internacional-voltam-para-a-natureza" class="botttao">Find out more</a>
             </div>
         </article>
 
@@ -132,7 +145,7 @@
             <div class="conteudo">
                 <h2>The largest feline in the Americas, the jaguar, is critically endangered in the Caatinga</h2>
                 <p class="data">21/02/2019 - 06h01 | Updated 6 years ago</p>
-                <a href="#" class="botttao">Find out more</a>
+                <a href="https://g1.globo.com/natureza/desafio-natureza/noticia/2019/02/21/maior-felino-das-americas-a-onca-pintada-esta-criticamente-ameacada-de-extincao-na-caatinga.ghtml" class="botttao">Find out more</a>
             </div>
         </article>
     </main>
@@ -171,5 +184,9 @@
         <a href="https://x.com/?lang=pt"><img src="img/X.png" alt="X (Twitter)"></a>
     </div>
 </footer>
+
+<!--Ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

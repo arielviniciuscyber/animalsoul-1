@@ -13,12 +13,21 @@
             <a href="index.html"><img src="img/logo.png" alt="Logo Pinguim"></a>
         </div>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li><a href="index.html">Página inicial</a></li>
                 <li><a href="animais.em.destaque.html">Animais em destaque</a></li>
                 <li><a href="sobre.nos.html">Sobre nós</a></li>
                 <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="fale.conosco.html">Fale conosco</a></li>
+                <li><a href="fale.conosco.html" class="ativo">Fale conosco</a></li>
+            </ul>
+
+            <!-- MENU MOBILE -->
+            <ul class="navbar" id="mobileMenu">
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="animais.em.destaque.html">Animais em destaque</a></li>
+                <li><a href="sobre.nos.html">Sobre nós</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="fale.conosco.html" class="ativo">Fale conosco</a></li>
             </ul>
         </nav>
         <div class="actions">
@@ -33,6 +42,10 @@
               <option value="fale.conosco-fr.html">FR</option>
             </select>
           </div>
+          <!--Botão mobile-->
+        <button class="navbar_toggle" aria-label="menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
             <a href="doar.html"><button class="doar">Doar</button></a>
         </div>
     </header>
@@ -94,5 +107,9 @@
         <a href="https://x.com/?lang=pt"><img src="img/X.png" alt="X (Twitter)"></a>
     </div>
 </footer>
+
+<!--Ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

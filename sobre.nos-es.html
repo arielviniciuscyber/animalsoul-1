@@ -13,10 +13,19 @@
             <a href="index-es.html"><img src="img/logo.png" alt="Logo Pinguim"></a>
         </div>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li><a href="index-es.html">Pagina de Inicio</a></li>
                 <li><a href="animais.em.destaque-es.html">Animales Destacados</a></li>
-                <li><a href="sobre.nos-es.html">Sobre Nosotros</a></li>
+                <li><a href="sobre.nos-es.html" class="ativo">Sobre Nosotros</a></li>
+                <li><a href="comunidade-es.html">Comunidad</a></li>
+                <li><a href="fale.conosco-es.html">Contáctenos</a></li>
+            </ul>
+
+            <!-- MENU MOBILE -->
+            <ul class="navbar" id="mobileMenu">
+                <li><a href="index-es.html">Pagina de Inicio</a></li>
+                <li><a href="animais.em.destaque-es.html">Animales Destacados</a></li>
+                <li><a href="sobre.nos-es.html" class="ativo">Sobre Nosotros</a></li>
                 <li><a href="comunidade-es.html">Comunidad</a></li>
                 <li><a href="fale.conosco-es.html">Contáctenos</a></li>
             </ul>
@@ -33,9 +42,92 @@
               <option value="index-fr.html">FR</option>
             </select>
           </div>
+          <!--Botão mobile-->
+        <button class="navbar_toggle" aria-label="menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
             <a href="doar-es.html"><button class="doar">Donar</button></a>
         </div>
     </header>
+
+    <!-- Equipe Sobre -->
+<section class="equipe">
+    <div class="container">
+      <div class="titulo-secao">
+        <h2>Conoce a nuestro equipo</h2>
+        <p>
+            Profesionales dedicados que marcan la diferencia en tu experiencia.
+        </p>
+      </div>
+
+      <div class="cards-equipe">
+        <!-- Membro 1 -->
+        <article class="card membro1">
+          <div class="avatar">  
+            <div class="overlay">
+              <div class="social">
+                <a href="https://x.com/?lang=pt"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+          <h3>Ariel Teixeira</h3>
+          <p> Programador al inicio de mi carrera, en constante aprendizaje y evolución en el desarrollo de software. </p>
+        </article>
+
+        <!-- Membro 2 -->
+        <article class="card membro2">
+          <div class="avatar">
+            <div class="overlay">
+              <div class="social">
+                <a href="https://x.com/?lang=pt"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+          <h3>Sabrina</h3>
+          <p>
+            Desarrollador de nivel de entrada con experiencia y enfoque en la creación de soluciones visuales creativas y funcionales.
+          </p>
+        </article>
+
+        <!-- Membro 3 -->
+        <article class="card membro3">
+          <div class="avatar">
+          <div class="overlay">
+              <div class="social">
+                <a href="https://x.com/?lang=pt"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+          <h3>Luan Martins</h3>
+          <p>
+            Desarrollador junior en formación, enfocado en aprender mejores prácticas y construir soluciones eficientes.
+          </p>
+        </article>
+
+        <!-- Membro 4 -->
+        <article class="card membro4">
+          <div class="avatar">
+           <div class="overlay">
+              <div class="social">
+                <a href="https://x.com/?lang=pt"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+          <h3>Maju vieira</h3>
+          <p>Diseñador de nivel inicial con 5 meses de experiencia, enfocado en crear soluciones visuales creativas y funcionales.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
 
     <div class="Titulo">
         <h1>EL ALMA DETRÁS DEL ALMA ANIMAL</h1>
@@ -83,60 +175,6 @@
             </div><br>
         </section>
 
-
-<!-- Equipe Sobre -->
-<section class="equipe">
-    <div class="container">
-      <div class="titulo-secao">
-        <h2>Conoce a nuestro equipo</h2>
-        <p>
-            Profesionales dedicados que marcan la diferencia en tu experiencia.
-        </p>
-      </div>
-
-      <div class="cards-equipe">
-        <!-- Membro 1 -->
-        <article class="card membro1">
-          <div class="avatar">  
-          </div>
-          <h3>Ariel Teixeira</h3>
-          <p> Programador al inicio de mi carrera, en constante aprendizaje y evolución en el desarrollo de software. </p>
-        </article>
-
-        <!-- Membro 2 -->
-        <article class="card membro2">
-          <div class="avatar">
-          </div>
-          <h3>Sabrina</h3>
-          <p>
-            Desarrollador de nivel de entrada con experiencia y enfoque en la creación de soluciones visuales creativas y funcionales.
-          </p>
-        </article>
-
-        <!-- Membro 3 -->
-        <article class="card membro3">
-          <div class="avatar">
-          
-          </div>
-          <h3>Luan Martins</h3>
-          <p>
-            Desarrollador junior en formación, enfocado en aprender mejores prácticas y construir soluciones eficientes.
-          </p>
-        </article>
-
-        <!-- Membro 4 -->
-        <article class="card membro4">
-          <div class="avatar">
-           
-          </div>
-          <h3>Maju vieira</h3>
-          <p>Diseñador de nivel inicial con 5 meses de experiencia, enfocado en crear soluciones visuales creativas y funcionales.</p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
     <footer class="rodape">
         <div class="rodape-conteudo">
             <div class="logo-area">
@@ -170,5 +208,9 @@
             <a href="https://x.com/?lang=pt"><img src="img/X.png" alt="X (Twitter)"></a>
         </div>
 </footer>
+
+<!--Ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

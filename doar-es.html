@@ -13,13 +13,22 @@
         <a href="index-es.html"><img src="img/logo.png" alt="Logo Pinguim" /></a>
       </div>
       <nav>
-        <ul>
+        <ul class="navbar">
             <li><a href="index-es.html">Pagina de Inicio</a></li>
             <li><a href="animais.em.destaque-es.html">Animales Destacados</a></li>
             <li><a href="sobre.nos-es.html">Sobre Nosotros</a></li>
             <li><a href="comunidade-es.html">Comunidad</a></li>
             <li><a href="fale.conosco-es.html">Contáctenos</a></li>
         </ul>
+
+        <!-- MENU MOBILE -->
+            <ul class="navbar" id="mobileMenu">
+                <li><a href="index-es.html">Pagina de Inicio</a></li>
+            <li><a href="animais.em.destaque-es.html">Animales Destacados</a></li>
+            <li><a href="sobre.nos-es.html">Sobre Nosotros</a></li>
+            <li><a href="comunidade-es.html">Comunidad</a></li>
+            <li><a href="fale.conosco-es.html">Contáctenos</a></li>
+            </ul>
     </nav>
     <div class="actions">
         <input type="text" placeholder="Buscar">
@@ -33,6 +42,10 @@
           <option value="index-fr.html">FR</option>
         </select>
       </div>
+      <!--Botão mobile-->
+        <button class="navbar_toggle" aria-label="menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
     </div>
 </header>
 
@@ -61,5 +74,9 @@
         </div>
       </div>
     </main>
+
+    <!--Ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

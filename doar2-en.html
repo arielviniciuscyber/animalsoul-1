@@ -13,13 +13,22 @@
         <a href="index-en.html"><img src="img/logo.png" alt="Logo Pinguim" /></a>
       </div>
       <nav>
-        <ul>
+        <ul class="navbar">
           <li><a href="index-en.html">Home</a></li>
           <li><a href="animais.em.destaque-.html">Featured animals</a></li>
           <li><a href="sobre.nos-en.html">About us</a></li>
           <li><a href="comunidade-en.html">Community</a></li>
           <li><a href="fale.conosco-en.html">Talk to us</a></li>
         </ul>
+
+        <!-- MENU MOBILE -->
+            <ul class="navbar" id="mobileMenu">
+                <li><a href="index-en.html">Home</a></li>
+                <li><a href="animais.em.destaque-.html">Featured animals</a></li>
+                <li><a href="sobre.nos-en.html">About us</a></li>
+                <li><a href="comunidade-en.html">Community</a></li>
+                <li><a href="fale.conosco-en.html">Talk to us</a></li>
+            </ul>
       </nav>
       <div class="search-bar">
       <input type="text" placeholder="Search">
@@ -33,6 +42,10 @@
             <option value="doar2-fr.html">FR</option>
           </select>
         </div>
+        <!--Botão mobile-->
+        <button class="navbar_toggle" aria-label="menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
     </div>
     </header>
     <main>
@@ -57,5 +70,9 @@
         </div>
       </div>
     </main>
+
+    <!--Ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
     --nav: #000080;
     --header: #0d1b2a;
@@ -43,6 +46,46 @@ body {
       border-radius: 50%;
       object-fit: cover;
   }
+
+/*Menu mobile*/
+#mobileMenu {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    width: 240px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem 1rem;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+#mobileMenu li {
+    width: 100%;
+    border-bottom: 1px solid var(--white);
+    padding: 0.6rem 0;
+}
+
+#mobileMenu li:last-child {
+    border-bottom: none;
+}
+
+#mobileMenu a:hover {
+    border-bottom: none !important;
+    transform: translateX(4px);
+    text-decoration: none;
+}
+
+/*quando o JS ativar*/
+#mobileMenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    opacity: 1;
+    transform: translateY(0);
+}
   
   nav ul {
       display: flex;
@@ -136,6 +179,21 @@ body {
     background: var(--gradienteSaibamais);
     color: var(--white);
     box-shadow: 0 2px 25px var(--white);
+}
+
+
+.navbar_toggle {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+.navbar_toggle ion-icon:hover {
+    color: var(--cinza);
 }
 
 .container {
@@ -329,7 +387,8 @@ button {
 .rodape {
     background: var(--nav);
     color: var(--white);
-    padding: 30px 40px;
+    padding: 10px;
+    margin-top: 20px;
     text-align: center;
 }
 

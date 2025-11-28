@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
     --nav: #000080;
     --header: #0d1b2a;
@@ -43,6 +46,46 @@ body {
       border-radius: 50%;
       object-fit: cover;
   }
+
+/*Menu mobile*/
+#mobileMenu {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    width: 240px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.2rem 1rem;
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+#mobileMenu li {
+    width: 100%;
+    border-bottom: 1px solid var(--white);
+    padding: 0.6rem 0;
+}
+
+#mobileMenu li:last-child {
+    border-bottom: none;
+}
+
+#mobileMenu a:hover {
+    border-bottom: none !important;
+    transform: translateX(4px);
+    text-decoration: none;
+}
+
+/*quando o JS ativar*/
+#mobileMenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    opacity: 1;
+    transform: translateY(0);
+}
   
   nav ul {
       display: flex;
@@ -61,6 +104,11 @@ body {
   nav a:hover {
       color: var(--ciano);
   }
+
+
+nav a.ativo {
+    color: var(--ciano);
+}
   
 .actions {
       display: flex;
@@ -139,8 +187,23 @@ body {
     box-shadow: 0 2px 25px var(--white);
 }
 
+
+.navbar_toggle {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+.navbar_toggle ion-icon:hover {
+    color: var(--cinza);
+}
+
 .banner {
-  height: 80vh;
+  height: 90vh;
   background-image: url(../img/Comunidade/bannerComunidade.jpg);
   background-size: cover;
   background-position: center;
@@ -157,6 +220,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     padding-top: 590px;
+    margin-top: 150px;
           
 }
   
@@ -165,15 +229,17 @@ body {
    padding: 25px 10px;
    border-radius: 50px;
    text-align: center;
-   width: 60%;
-   max-width: 600px;
+   width: 80%;
+   max-width: 800px;
    box-shadow: 0 2px 10px var(--black);
+   margin-top: 100px;
 }
   
 .input-group {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    gap: 30px;
 }
   
 .input-group input {
@@ -231,17 +297,17 @@ body {
     display: flex;
     justify-content: center;
     margin: 30px 0;
-    padding: 90px;
+    padding: 280px;
 }
   
 .post-box {
     background: var(--caixa);
     padding: 25px;
-    width: 50%;
+    width: 100%;
     border-radius: 35px;
     box-shadow: 0 0 10px var(--black);
     position: relative;
-    height: 250px;
+    height: 220px;
 }
 
   
@@ -296,6 +362,7 @@ textarea {
     margin: 0 auto 50px auto;
     box-shadow: var(--black);
     border: var(--caixa);
+    margin-top: -150px;
 }
 
 .com.relev {
@@ -374,7 +441,7 @@ textarea {
 
 .sugestoes {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     color: var(--nav);
 }
 .cards {
@@ -425,7 +492,7 @@ textarea {
 .rodape {
     background: var(--nav);
     color: var(--white);
-    padding: 30px 40px;
+    padding: 10px;
     margin-top: 20px;
     text-align: center;
 }

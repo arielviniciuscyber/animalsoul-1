@@ -13,8 +13,17 @@
             <a href="index-es.html"><img src="img/logo.png" alt="Logo Pinguim"></a>
         </div>
         <nav>
-            <ul>
-                <li><a href="index-es.html">Pagina de Inicio</a></li>
+            <ul class="navbar">
+                <li><a href="index-es.html" class="ativo">Pagina de Inicio</a></li>
+                <li><a href="animais.em.destaque-es.html">Animales Destacados</a></li>
+                <li><a href="sobre.nos-es.html">Sobre Nosotros</a></li>
+                <li><a href="comunidade-es.html">Comunidad</a></li>
+                <li><a href="fale.conosco-es.html">Contáctenos</a></li>
+            </ul>
+
+            <!-- MENU MOBILE -->
+            <ul class="navbar" id="mobileMenu">
+                <li><a href="index-es.html" class="ativo">Pagina de Inicio</a></li>
                 <li><a href="animais.em.destaque-es.html">Animales Destacados</a></li>
                 <li><a href="sobre.nos-es.html">Sobre Nosotros</a></li>
                 <li><a href="comunidade-es.html">Comunidad</a></li>
@@ -33,6 +42,10 @@
               <option value="index-fr.html">FR</option>
             </select>
           </div>
+          <!--Botão mobile-->
+        <button class="navbar_toggle" aria-label="menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
             <a href="doar-es.html"><button class="doar">Donar</button></a>
         </div>
     </header>
@@ -96,7 +109,7 @@
             <div class="conteudo">
                 <h2>Un lobo-guará, en peligro de extinción, es rescatado con sarna y signos de desnutrición en el interior de São Paulo.</h2>
                 <p class="data">25/04/2024 21h03 | Actualizado hace un año</p>
-                <a href="#" class="botttao">Descubra más</a>
+                <a href="https://g1.globo.com/sp/sao-jose-do-rio-preto-aracatuba/noticia/2024/04/25/ameacado-de-extincao-lobo-guara-e-resgatado-com-sarna-e-sinais-de-desnutricao-no-interior-de-sp.ghtml" class="botttao">Descubra más</a>
             </div>
         </article>
 
@@ -105,7 +118,7 @@
             <div class="conteudo">
                 <h2>Delfín rosado de río añadido a la lista de "en peligro" en Rondônia; entienda por qué.</h2>
                 <p class="data">14/11/2023 12h01 | Actualizado hace un año</p>
-                <a href="#" class="botttao">Descubra más</a>
+                <a href="https://g1.globo.com/ro/rondonia/noticia/2023/11/14/boto-cor-de-rosa-entra-na-lista-de-perigo-de-extincao-em-rondonia-entenda.ghtml" class="botttao">Descubra más</a>
             </div>
         </article>
 
@@ -114,7 +127,7 @@
             <div class="conteudo">
                 <h2>Pandas gigantes: la especie china ya no se considera "extinta" tras el programa de reproducción.</h2>
                 <p class="data">09/11/2023 08h14 | Actualizado hace un año</p>
-                <a href="#" class="botttao">Descubra más</a>
+                <a href="https://oglobo.globo.com/mundo/epoca/noticia/2023/11/09/pandas-gigantes-especie-chinesa-deixa-de-ser-considerada-extinta-apos-programa-de-reproducao.ghtml" class="botttao">Descubra más</a>
             </div>
         </article>
 
@@ -123,7 +136,7 @@
             <div class="conteudo">
                 <h2>Los tamarinos león dorados rescatados del tráfico internacional regresan a la naturaleza.</h2>
                 <p class="data">05/09/2023 10h11 | Actualizado hace un año</p>
-                <a href="#" class="botttao">Descubra más</a>
+                <a href="https://www.gov.br/icmbio/pt-br/assuntos/noticias/ultimas-noticias/micos-leoes-dourados-resgatados-do-trafico-internacional-voltam-para-a-natureza" class="botttao">Descubra más</a>
             </div>
         </article>
 
@@ -132,7 +145,7 @@
             <div class="conteudo">
                 <h2>El jaguar, el felino más grande de América, está en peligro crítico de extinción en la región de Caatinga.</h2>
                 <p class="data">21/02/2019 06h01 | Actualizado hace 6 años</p>
-                <a href="#" class="botttao">Descubra más</a>
+                <a href="https://g1.globo.com/natureza/desafio-natureza/noticia/2019/02/21/maior-felino-das-americas-a-onca-pintada-esta-criticamente-ameacada-de-extincao-na-caatinga.ghtml" class="botttao">Descubra más</a>
             </div>
         </article>
     </main>
@@ -171,5 +184,9 @@
         <a href="https://x.com/?lang=pt"><img src="img/X.png" alt="X (Twitter)"></a>
     </div>
 </footer>
+
+<!--Ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
