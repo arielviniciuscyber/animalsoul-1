@@ -106,8 +106,8 @@ nav a {
 
 nav a:hover {
     color: var(--ciano);
-}
 
+}
 
 nav a.ativo {
     color: var(--ciano);
@@ -126,10 +126,11 @@ nav a.ativo {
     outline: none;
 }
 
-
 /* ===== CAIXA DE SELEÇÃO ===== */
 .language-selector {
+    display: flex;
     align-items: center;
+    gap: 8px;
     background: var(--gradienteCinza);
     border-radius: 8px;
     padding: 3px 6px;
@@ -150,7 +151,7 @@ nav a.ativo {
 }
   
 .language-selector:hover .lang-icon {
-    background:transparent;
+    background: transparent;
 }
   
 .lang-select {
@@ -257,12 +258,16 @@ nav a.ativo {
     font-style: italic;
 }
 
+.cadastro .box{
+    margin-top: 10px;
+}
+
 .cadastro input, select, button {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
     border: none;
-    margin-top: 10px;
+    
     font-size: 14px;
 }
 
@@ -279,6 +284,7 @@ button {
 .google-btn {
     background-color: var(--caixa);
     border: 1px solid var(--white);
+    margin-top: 10px;
 }
 
 .google-btn:hover {
@@ -288,6 +294,7 @@ button {
 .facebook-btn {
     background-color: var(--caixa);
     border: 1px solid var(--white);
+    margin-top: 10px;
 }
 
 .facebook-btn:hover {
@@ -297,6 +304,7 @@ button {
 .x-btn {
     background-color: var(--caixa);
     border: 1px solid var(--white);
+    margin-top: 10px;
 }
 
 .x-btn:hover {
@@ -322,6 +330,7 @@ button {
     font-size: 1rem;
     color: var(--nav);
     background: transparent;
+    margin-top: 10px;
 }
 
 .birth select option {
@@ -384,7 +393,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 135px;
     background-color: var(--cinza);
     color: var(--black);

@@ -47,7 +47,6 @@ header {
     object-fit: cover;
 }
 
-
 /*Menu mobile*/
 #mobileMenu {
     position: absolute;
@@ -204,13 +203,11 @@ nav a.ativo {
 
 .hero {
     position: relative;
-    width: 100%;
-    text-align: center;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 900px;
     display: block;
 }
 .hero-text {
