@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>  
     <link rel="stylesheet" href="css/cadastre-se.css">                                 
-    <link rel="shortcut icon" href="img/favicon_io (2)/favicon.ico" type="image/x-i">
+    <link rel="shortcut icon" href="img/favicon_io (2)/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Logo Pinguim"></a>
+            <a href="index.html"><img src="img/logo.png" alt="Logo Animal Soul"></a>
         </div>
+        
         <nav>
             <ul class="navbar">
                 <li><a href="index.html">Página inicial</a></li>
@@ -22,195 +23,134 @@
             </ul>
 
             <!-- MENU MOBILE -->
-            <ul class="navbar" id="mobileMenu">
+            <ul id="mobileMenu">
                 <li><a href="index.html">Página inicial</a></li>
                 <li><a href="animais.em.destaque.html">Animais em destaque</a></li>
                 <li><a href="sobre.nos.html">Sobre nós</a></li>
                 <li><a href="comunidade.html">Comunidade</a></li>
-                <li><a href="fale.conosco.html" class="ativo">Fale conosco</a></li>
+                <li><a href="fale.conosco.html">Fale conosco</a></li>
+                <li><a href="doar.html"><button class="doar">Doar</button></a></li>
             </ul>
         </nav>
         
         <div class="actions">
             <input type="text" placeholder="Buscar">
-             <!-- Seletor de idioma -->
-          <div class="language-selector">
-            <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
-            <select class="lang-select" onchange="location = this.value;">
-              <option value="cadastre-se.html" selected>BR</option>
-              <option value="cadastre-se-en.html">EN</option>
-              <option value="cadastre-se-es.html">ES</option>
-              <option value="cadastre-se-fr.html">FR</option>
-            </select>
-          </div>
-           <!--Botão mobile-->
-        <button class="navbar_toggle" aria-label="menu mobile">
-            <ion-icon name="menu-outline"></ion-icon>
-        </button>
+            
+            <!-- Seletor de idioma -->
+            <div class="language-selector">
+                <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
+                <select class="lang-select" onchange="location = this.value;">
+                    <option value="cadastre-se.html" selected>BR</option>
+                    <option value="cadastre-se-en.html">EN</option>
+                    <option value="cadastre-se-es.html">ES</option>
+                    <option value="cadastre-se-fr.html">FR</option>
+                </select>
+            </div>
+            
             <a href="doar.html"><button class="doar">Doar</button></a>
+            
+            <!-- Botão mobile -->
+            <button class="navbar_toggle" aria-label="menu mobile">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
         </div>
     </header>
     
     <main class="container">
         <div class="boxbox">  
-        <section class="login-box">
-            <h2>BEM-VINDO DE VOLTA!</h2>
+            <section class="login-box">
+                <h2>BEM-VINDO DE VOLTA!</h2>
 
-            <button class="google-btn">Fazer login com o Google</button>
-            <button class="facebook-btn">Fazer login com o Facebook</button>
-            <button class="x-btn">Fazer login com o X</button>
+                <button class="google-btn">
+                    <ion-icon name="logo-google"></ion-icon>
+                    Fazer login com o Google
+                </button>
+                <button class="facebook-btn">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    Fazer login com o Facebook
+                </button>
+                <button class="x-btn">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    Fazer login com o X
+                </button>
 
-            <div class="divider">
-                <span>OU</span>
-            </div>
+                <div class="divider">
+                    <span>OU</span>
+                </div>
 
-            <div class="text">
-            <input class="box" type="text" placeholder="Email ou nome de usuário">
-            <input class="box" type="password" placeholder="Senha">
-            <button class="btn">Entrar</button>
-            </div>
+                <div class="text">
+                    <input class="box" type="text" placeholder="Email ou nome de usuário">
+                    <input class="box" type="password" placeholder="Senha">
+                    <button class="btn">Entrar</button>
+                </div>
+            </section>
 
-        </section>
+            <section class="signup-box">
+                <h2>Cadastre-se aqui!</h2>
 
-        <section class="signup-box">
+                <div class="cadastro">
+                    <input class="box" type="text" placeholder="Nome completo" required>
+                    <input class="box" type="text" placeholder="Celular ou email" required>
+                    <input class="box" type="password" placeholder="Senha" required>
+                </div>
 
-            <h2>Cadastre-se aqui!</h2>
+                <h4>Data de Nascimento:</h4>
 
-            <div class="cadastro">
-            <input class="box" type="text" placeholder="Nome completo" required/>
-            <input class="box" type="text" placeholder="Celular ou email" required/>
-            <input class="box" type="password" placeholder="Senha" required/>
-            </div>
+                <div class="birth">
+                    <select>
+                        <option selected disabled>Dia</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <!-- Adicione todos os dias -->
+                    </select>
+                    <select>
+                        <option selected disabled>Mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <!-- Adicione todos os meses -->
+                    </select>
+                    <select>
+                        <option selected disabled>Ano</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <!-- Adicione todos os anos -->
+                    </select>
+                </div>
 
-            <h4>Data de Nascimento:</h4>
+                <h4>Gênero:</h4>
 
-            <div class="birth">
-                <select>
-                    <option selected disabled="">Dia</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                </select>
-                <select>
-                    <option selected disabled="">Mês</option>
-                    <option value="1">Janeiro</option>
-                    <option value="2">Fevereiro</option>
-                    <option value="3">Março</option>
-                    <option value="4">Abril</option>
-                    <option value="5">Maio</option>
-                    <option value="6">Junho</option>
-                    <option value="7">Julho</option>
-                    <option value="8">Agosto</option>
-                    <option value="9">Setembro</option>
-                    <option value="10">Outubro</option>
-                    <option value="11">Novembro</option>
-                    <option value="12">Dezembro</option>
-                </select>
-                <select>
-                    <option selected disabled="">Ano</option>
-                    <option value="1">2025</option>
-                    <option value="1">2024</option>
-                    <option value="1">2023</option>
-                    <option value="1">2022</option>
-                    <option value="1">2021</option>
-                    <option value="1">2020</option>
-                    <option value="1">2019</option>
-                    <option value="1">2018</option>
-                    <option value="1">2017</option>
-                    <option value="1">2016</option>
-                    <option value="1">2015</option>
-                    <option value="1">2014</option>
-                    <option value="1">2013</option>
-                    <option value="1">2012</option>
-                    <option value="1">2011</option>
-                    <option value="1">2010</option>
-                    <option value="1">2009</option>
-                    <option value="1">2008</option>
-                    <option value="1">2007</option>
-                    <option value="1">2006</option>
-                    <option value="1">2005</option>
-                    <option value="1">2004</option>
-                    <option value="1">2003</option>
-                    <option value="1">2002</option>
-                    <option value="1">2001</option>
-                    <option value="1">2000</option>
-                    <option value="1">1999</option>
-                    <option value="1">1998</option>
-                    <option value="1">1997</option>
-                    <option value="1">1996</option>
-                    <option value="1">1995</option>
-                    <option value="1">1994</option>
-                    <option value="1">1993</option>
-                    <option value="1">1992</option>
-                    <option value="1">1991</option>
-                    <option value="1">1990</option>
-                    <option value="1">1989</option>
-                    <option value="1">1988</option>
-                    <option value="1">1987</option>
-                    <option value="1">1986</option>
-                    <option value="1">1985</option>
-                    <option value="1">1984</option>
-                    <option value="1">1983</option>
-                    <option value="1">1982</option>
-                    <option value="1">1981</option>
-                    <option value="1">1980</option>
-                </select>
-            </div>
+                <div class="container-gender">
+                    <div class="gender">
+                        <p>F</p>
+                        <input type="radio" name="gender">
+                    </div>
 
-            <h4 >Gênero:</h4>
+                    <div class="gender">
+                        <p>M</p>
+                        <input type="radio" name="gender">
+                    </div>
 
-           <div class="container-gender">
-            <div class="gender">
-                <p>F</p><input type="radio" name="gender">
-            </div>
+                    <div class="gender">
+                        <p>Outro</p>
+                        <input type="radio" name="gender">
+                    </div>
+                </div>
 
-            <div class="gender">
-                <p>M</p><input type="radio" name="gender">
-            </div>
+                <p class="terms">
+                    Ao clicar em Cadastrar-se você concorda com nossos <a href="#">Termos</a>,
+                    <a href="#">Política de Privacidade</a> e <a href="#">Política de Cookies</a>.
+                </p>
 
-            <div class="gender">
-                <p>Outro</p><input type="radio" name="gender">
-            </div>
-            </div>
-
-            <p class="terms">
-                Ao clicar em Cadastrar-se você concorda com nossos <a href="#">Termos</a>,
-                <a href="#">Política de Privacidade</a> <br> e <a href="#">Política de Cookies</a>.
-            </p>
-
-            <button class="btn2">Cadastrar-se</button>
-        </section>
+                <button class="btn2">Cadastrar-se</button>
+            </section>
+        </div>
     </main>
-    <!--Ionic-->
+    
+    <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!-- Seu script -->
+    <script src="js/script.js"></script>
 </body>                         
 </html>
